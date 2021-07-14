@@ -11,3 +11,8 @@ https://www.nobledesktop.com/learn/git/git-branches
 - add new code in dev and merge to "origin/master"
 
 ## !! hot fix !!
+
+## testing stash(deleted first) *
+
+- stash message 
+- after stash pop `CONFLICT (content): Merge conflict in Readme.md`
