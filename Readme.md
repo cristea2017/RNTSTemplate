@@ -1,0 +1,1 @@
+# Sample project for begin work with react native
