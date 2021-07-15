@@ -27,3 +27,4 @@ git reset --hard origin/<branchname>
 ## Show list of commits
 
 - git log --pretty=oneline
+- git reset --soft HEAD~1
