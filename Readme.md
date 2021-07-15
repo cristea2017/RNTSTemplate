@@ -18,13 +18,30 @@ https://www.nobledesktop.com/learn/git/git-branches
 
 ## reset local branch from remote /branch
 
+```
 git reset --hard origin/<branchname>
+```
 
 ## reset commit with saving working
 
+```
 - git reset --soft HEAD~1
+```
 
 ## Show list of commits
 
+```
 - git log --pretty=oneline
-- git reset --soft HEAD~1
+```
+
+## 3. Приводим локальную ветку в соответствие с удаленной
+
+Иногда внесешь массу изменений в локальную ветку, а в итоге понимаешь, что от
+них стало только хуже. Знакомо? Не переживайте, с этим многие сталкивались. В
+такой ситуации вам поможет вот эта команда.
+
+```
+// замените staging именем ветки, до которой хотите сбросить
+
+git reset --hard origin/staging
+```
