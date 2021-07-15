@@ -19,3 +19,11 @@ https://www.nobledesktop.com/learn/git/git-branches
 ## reset local branch from remote /branch
 
 git reset --hard origin/<branchname>
+
+## reset commit with saving working
+
+- git reset --soft HEAD~1
+
+## Show list of commits
+
+- git log --pretty=oneline
