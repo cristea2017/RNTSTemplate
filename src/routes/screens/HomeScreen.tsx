@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { getMoviesBySearchQueryApi } from '~/api/movie';
 import ScreenWrapper from '~/components/common/ScreenWrapper'
 import { globalStyles } from '~/theme/globals';
+import NavigationService from '~/utils/NavigationService';
 
 const HomeScreen: React.FC<Props> = props => {
     console.log('props', props);
@@ -11,11 +12,11 @@ const HomeScreen: React.FC<Props> = props => {
 
 
     useEffect(async () => {
-        getMoviesBySearchQueryApi({ query: 'a', page: 1 }).then((res, rej) => {
-            console.log('res>', res);
+        // getMoviesBySearchQueryApi({ query: 'a', page: 1 }).then((res, rej) => {
+        //     console.log('res>', res);
 
-        })
-
+        // })
+        NavigationService.navigate("SettingsScreen")
 
 
     }, [])
