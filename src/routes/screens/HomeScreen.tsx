@@ -4,19 +4,21 @@ import { getMoviesBySearchQueryApi } from '~/api/movie';
 import ScreenWrapper from '~/components/common/ScreenWrapper'
 import { globalStyles } from '~/theme/globals';
 import NavigationService from '~/utils/NavigationService';
+import { searchYoutubeMusic } from '~/utils/YoutubeManager';
 
 const HomeScreen: React.FC<Props> = props => {
-    console.log('props', props);
+    // console.log('props', props);
 
 
 
 
     useEffect(async () => {
+        await searchYoutubeMusic('akord')
         // getMoviesBySearchQueryApi({ query: 'a', page: 1 }).then((res, rej) => {
         //     console.log('res>', res);
 
         // })
-        NavigationService.navigate("SettingsScreen")
+        // NavigationService.navigate("SettingsScreen")
 
 
     }, [])
