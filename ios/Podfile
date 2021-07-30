@@ -12,6 +12,8 @@ target 'TestTypescript' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+
   target 'TestTypescriptTests' do
     inherit! :complete
     # Pods for testing
