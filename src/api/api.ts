@@ -1,5 +1,5 @@
-import axios, { AxiosError, AxiosResponse } from 'axios';
-import { config } from '~/config/config';
+import axios, {AxiosError, AxiosResponse} from 'axios';
+import {config} from '~/config/config';
 
 const api = axios.create({
   baseURL: 'https://api.themoviedb.org/3',
@@ -30,7 +30,6 @@ api.interceptors.response.use(
     return response;
   },
   (error: AxiosError) => {
-
     if (config.logNetworkMessages) {
       console.log('[Error interceptor]', error);
     }

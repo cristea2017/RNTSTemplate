@@ -14,7 +14,7 @@ import images from '~/assets/images';
 import { Provider } from 'react-redux';
 import { store, persistor } from '~/redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
-import NavigationService from '~/utils/NavigationService';
+import NavigationService, { navigationRef, routeNameRef } from '~/utils/NavigationService';
 
 
 /* ------------- Navigation ------------- */
@@ -90,10 +90,17 @@ function RootStack() {
  */
 const Navigation = () => {
     return (
-        <NavigationContainer>
+        <NavigationContainer ref={navigationRef}
+            onStateChange={(state) => {
+                const currentRouteName = NavigationService.getActiveRouteName(
+                    state,
+                );
+                // @ts-ignore
+                routeNameRef.current = currentRouteName;
+            }}>
             <Provider store={store}>
                 <PersistGate loading={null} persistor={persistor}>
-                    <RootStack ref={NavigationService.setNavigatorReference} />
+                    <RootStack />
                 </PersistGate>
             </Provider>
         </NavigationContainer>
