@@ -45,3 +45,5 @@ git reset --hard origin/<branchname>
 
 git reset --hard origin/staging
 ```
+
+testing rebase with apply on top
