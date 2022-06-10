@@ -58,3 +58,5 @@ feature2 reabase
 created dev branch
 
 dev->feature/f1
+
+dev-feature/f2
