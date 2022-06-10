@@ -48,4 +48,19 @@ git reset --hard origin/staging
 
 testing rebase with apply on top
 
+<<<<<<< HEAD
 upd master
+=======
+<<<<<<< HEAD
+asdasd
+=======
+featurehotfixchecrry pick2 reabase
+
+> > > > > > > 2d986893c0eb9b0bf2f48ae548a8a42ea40ad3bc
+
+created dev branch
+
+dev->feature/f1
+
+dev-feature/f2
+>>>>>>> 31da5f7c5ee7fdb572c1083d222ac17d70641f1d
