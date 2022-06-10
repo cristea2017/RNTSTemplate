@@ -48,8 +48,4 @@ git reset --hard origin/staging
 
 testing rebase with apply on top
 
-<<<<<<< HEAD
-asdasd
-=======
-feature2 reabase
->>>>>>> 2d986893c0eb9b0bf2f48ae548a8a42ea40ad3bc
+upd master
